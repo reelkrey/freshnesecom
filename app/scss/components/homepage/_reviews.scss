@@ -1,0 +1,85 @@
+.reviews {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        background-color: transparent;
+    }
+
+    &__container {
+        max-width: 1350px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+
+    }
+    
+    &__fix {
+        position: relative;
+        margin: 0;
+        max-width: 370px;
+        padding: 24px 32px 40px;
+        border: 1px solid #F1F1F1;
+        border-radius: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__blockquote {
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: 500;
+    }
+    
+    &__author {
+        display: block;
+        padding-top: 25px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-style: normal;
+        color: #A9A9A9;
+    }
+
+    &__image {
+        position: absolute;
+        content: "";
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        @extend %bg;
+    }
+
+    .slick-slide {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        z-index: 10;
+        filter: invert(93%) sepia(92%) saturate(29%) hue-rotate(76deg) brightness(106%) contrast(100%);
+
+        &--prev {
+            transform: rotate(90deg);
+        }
+
+        &--next {
+            transform: rotate(-90deg);
+        }
+    }
+}

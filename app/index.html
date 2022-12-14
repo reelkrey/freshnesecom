@@ -2,12 +2,495 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>hello</title>
+    <title>Freshnesecom</title>
 </head>
-<body> 
+<body>
 
-    <script src="js/main.min.js"></script>
+
+<section class="header">
+    <div class="container">
+        <nav class="header__nav">
+            <address class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="#">Chat with us</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="tel:+420336775664">+420 336 775 664</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="header__info">
+                <li class="header__info-item">
+                    <a class="header__info-link" href="#">Blog</a>
+                </li>
+                <li class="header__info-item">
+                    <a class="header__info-link" href="#">About Us</a>
+                </li>
+                <li class="header__info-item">
+                    <a class="header__info-link" href="#">Careers</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__inner">
+            <a class="logo" href="index.html">
+                <svg class="logo__image">
+                    <use xlink:href="images/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <form class="header__search" action="#">
+                <select class="header__search-select select-style">
+                    <option value="">All categories</option>
+                    <option value="">Fresh fruits</option>
+                    <option value="">Vegetables</option>
+                </select>
+                <input class="header__search-input" type="search" placeholder="Search Products, categories ...">
+                <button class="header__search-button" type="submit"></button>
+            </form>
+            <ul class="header__user">
+                <li class="header__user-item header__user-item--user">
+                    <button class="header__user-button" type="button">
+                        <span class="sr-only">Поиск</span>
+                    </button>
+                </li>
+                <li class="header__user-item header__user-item--cart">
+                    <button class="header__user-button" type="button">
+                        <span class="sr-only">Корзина</span>
+                        <span class="header__user-num">4</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__categories">
+        <div class="container">
+            <form class="header__categories-form">
+                <select class="header__categories-select select-style">
+                    <option value="">Bakery</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Pharmacy</option>
+                    <option value="">Baby</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Meat and fish</option>
+                    <option value="">Kitchen</option>
+                    <option value="">Baby</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Drinks</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Kitchen</option>
+                <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Special nutrition</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Baby</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Pharmacy</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</section>
+
+<main class="main">
+
+<section class="category section">
+    <h1 class="title">
+        <div class="sr-only">Freshnesecom Food</div>
+    </h1>
+    <div class="container">
+        <div class="category__wrapper">
+            <div class="category-menu">
+                <h2 class="title">Category menu</h2>
+                <ul class="category-menu__list">
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Bakery</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Fruit and vegetables</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Drinks</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Kitchen</a>
+                    </li>
+                </ul>
+                <a class="category__menu-btn btn" href="#">More categories</a>
+            </div>
+            <div class="category__inner">
+                <div class="category__item">
+                    <h4 class="category__item-subtitle title">Banner subfocus</h4>
+                    <h2 class="category__item-title title">Space for heading</h2>
+                    <a class="category__item-link title btn" href="#">Read recepies</a>
+                </div>
+                <div class="category__item">
+                    <h4 class="category__item-subtitle title">Banner subfocus</h4>
+                    <h2 class="category__item-title title">Space for heading</h2>
+                    <a class="category__item-link title btn" href="#">Read recepies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="best-selling section">
+    <div class="container">
+        <div class="best-selling__wrapper">
+            <div class="category-menu">
+                <h2 class="title">Best selling products</h2>
+                <ul class="category-menu__list">
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Kitchen</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Special nutrition</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Pharmacy</a>
+                    </li>
+                    <li class="category-menu__item">
+                        <a class="category-menu__link" href="#">Baby</a>
+                    </li>
+                </ul>
+                <a class="category__menu-btn btn" href="#">More categories</a>
+            </div>
+            <div class="best-selling__inner">
+                <article class="product-card">
+                    <img class="product-card__image" src="images/item-image/1.jpeg" width="237" height="180" alt="Product">
+                    <h3 class="product-card__title title">Product Title</h3>
+                    <p class="product-card__desc">Space for a small product description</p>
+                    <div class="product-card__box">
+                        <span class="product-card__price">1.48
+                            <span class="product-card__currency">USD</span>
+                        </span>
+                        <button class="product-card__button btn" type="button">Buy now</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/item-image/2.jpeg" width="237" height="180" alt="Product">
+                    <h3 class="product-card__title title">Product Title</h3>
+                    <p class="product-card__desc">Space for a small product description</p>
+                    <div class="product-card__box">
+                        <span class="product-card__price">1.28
+                            <span class="product-card__currency">USD</span>
+                        </span>
+                        <button class="product-card__button btn" type="button">Buy now</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/item-image/3.jpeg" width="237" height="180" alt="Product">
+                    <h3 class="product-card__title title">Product Title</h3>
+                    <p class="product-card__desc">Space for a small product description</p>
+                    <div class="product-card__box">
+                        <span class="product-card__price">1.12
+                            <span class="product-card__currency">USD</span>
+                        </span>
+                        <button class="product-card__button btn" type="button">Buy now</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="top-categories section">
+    <div class="container">
+        <h2 class="top-categories__title title">Top Categories</h2>
+        <h3 class="top-categories__subtitle">Space for your subtitle, can be larger so don’t worry - large heading looks better</h3>
+        <ul class="top-categories__list">
+            <li class="top-categories__item" style="background-image: url('/images/top-categories/1.jpg');">
+                <h3 class="top-categories__item-title title">
+                    Fresh Carrot
+                </h3>
+                <div class="top-categories__box">
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+            <li class="top-categories__item" style="background-image: url('images/top-categories/2.jpg');">
+                <h3 class="top-categories__item-title title">
+                    Fresh Tomato
+                </h3>
+                <div class="top-categories__box">
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                        <a class="top-categories__box-link" href="#">
+                            <svg class="top-categories__box-icon">
+                                <use xlink:href="images/sprite.svg#icon-heart"></use>
+                            </svg>
+                        </a>
+                        <a class="top-categories__box-link" href="#">
+                            <svg class="top-categories__box-icon">
+                                <use xlink:href="images/sprite.svg#icon-cart"></use>
+                            </svg>
+                        </a>
+                </div>
+            </li>
+            <li class="top-categories__item" style="background-image: url('images/top-categories/3.jpg');">
+                <h3 class="top-categories__item-title title">
+                    Fresh Onion
+                </h3>
+                <div class="top-categories__box">
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+            <li class="top-categories__item" style="background-image: url('images/top-categories/4.jpg');">
+                <h3 class="top-categories__item-title title">
+                    Fresh Cucumber
+                </h3>
+                <div class="top-categories__box">
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+            <li class="top-categories__item" style="background-image: url('images/top-categories/5.jpg');">
+                <h3 class="top-categories__item-title title">
+                    Fresh Pepper
+                </h3>
+                <div class="top-categories__box">
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+            <li class="top-categories__item" style="background-image: url('images/top-categories/6.jpg');">
+                <h3 class="top-categories__item-title title">
+                    Fresh Mushroom
+                </h3>
+                <div class="top-categories__box">
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+            <li class="top-categories__item" style="background-image: url('images/top-categories/7.jpg');">
+                <h3 class="top-categories__item-title title">
+                    Fresh Cabage
+                </h3>
+                <div class="top-categories__box">
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-search"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-heart"></use>
+                        </svg>
+                    </a>
+                    <a class="top-categories__box-link" href="#">
+                        <svg class="top-categories__box-icon">
+                            <use xlink:href="images/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="reviews section">
+    <div class="container">
+        <div class="reviews__top">
+            <h2 class="reviews__title title">Our customers says</h2>
+            <button class="reviews__button btn">Button</button>
+        </div>
+    </div>
+    <div class="reviews__container">
+        <ul class="reviews__slider">
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/1.png" width="48" height="48" alt="">
+                </div>
+            </li>
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/2.png" width="48" height="48" alt="">
+                </div>
+            </li>
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/1.png" width="48" height="48" alt="">
+                </div>
+            </li>
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/2.png" width="48" height="48" alt="">
+                </div>
+            </li>
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/1.png" width="48" height="48" alt="">
+                </div>
+            </li>
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/2.png" width="48" height="48" alt="">
+                </div>
+            </li>
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/1.png" width="48" height="48" alt="">
+                </div>
+            </li>
+            <li class="reviews__item">
+                <div class="reviews__fix">
+                    <blockquote class="reviews__blockquote">
+                        “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                        <cite class="reviews__author">
+                            Name and Surname
+                        </cite>
+                    </blockquote>
+                    <img class="reviews__image" src="/images/reviews-image/2.png" width="48" height="48" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</section> 
+
+</main>
+
+<footer class="footer"></footer>
+
+<script src="js/main.min.js"></script>
 </body>
 </html>

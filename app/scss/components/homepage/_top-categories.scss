@@ -1,0 +1,87 @@
+.top-categories {
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        max-width: 500px;
+        margin-bottom: 40px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;         
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 30px;
+        min-height: 700px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        @extend %bg;
+
+        &:hover {
+            .top-categories__box {
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &:nth-child(1) {
+            grid-column: span 2;
+
+        }
+
+        &:nth-child(5) {
+            grid-row: span 2;
+        }
+
+        &-title {
+            padding: 5px;
+            margin-bottom: 0;
+            border-radius: 10px;
+            color: $gray2;
+            background-color: $green1;
+
+        }
+    }
+
+
+    &__box {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 300%);
+        width: 150px;
+        padding: 10px 15px;
+        border: 4px solid $gray3;
+        border-radius: 10px;
+        background-color: $gray1;
+        transition: transform 0.3s;
+
+        &-link {
+            width: 20px;
+            height: 20px;
+        }
+
+        &-icon {
+            width: 20px;
+            height: 20px;
+
+            &:hover {
+                filter: invert(33%) sepia(88%) saturate(4850%) hue-rotate(68deg) brightness(98%) contrast(92%);
+            }
+        }
+    }
+}

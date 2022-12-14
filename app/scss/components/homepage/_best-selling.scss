@@ -1,0 +1,10 @@
+.best-selling {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__inner {
+        display: flex;
+    }
+}

@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'OpenSans';
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    color: $dark;
+    background-color: $white;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    &__image {
+        width: 177px;
+        height: 50px;
+    }
+} 
+
+.title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.btn {
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 700;
+    padding: 13px 38px 13px 16px;
+    border-radius: 12px;
+    background-color: $gray2;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 10%;
+        transform: rotate(-90deg) translateX(50%);
+        width: 16px;
+        height: 16px;
+        background-image: url('../images/sprite.svg#icon-chevron');
+        @extend %bg;
+        filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(7455%) hue-rotate(350deg) brightness(92%) contrast(97%);
+    }
+}

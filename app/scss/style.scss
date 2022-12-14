@@ -2,8 +2,12 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
-
-
-
-
-@import 'media';
+@import 'mixin';
+@import 'mixin';
+@import 'libs';
+@import './components/header';
+@import './components/product-card';
+@import './components/homepage/category';
+@import './components/homepage/best-selling';
+@import './components/homepage/top-categories';
+@import './components/homepage/reviews';

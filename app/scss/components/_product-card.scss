@@ -1,0 +1,55 @@
+.product-card {
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    width: 270px;
+    height: 330px;
+    padding: 16px;
+    border: 1px solid $gray3;
+    border-radius: 12px;   
+    
+    &__image {
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    &__desc {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &__button {
+
+        &.btn {
+            color: $white;
+            background-color: $green1;
+            padding: 7px 12px;
+            border: 2px solid $green2;
+            
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
