@@ -1,0 +1,29 @@
+.breadcrumbs {
+    padding: 16px 0;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 10px;
+        position: relative;
+        padding-right: 14px;
+        
+        &:not(:last-child) {
+            color: #a9a9a9;
+            
+            &::after {
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 16px;
+                background-image: url('../images/sprite.svg#icon-slash');
+                @extend %bg;
+            }
+        }
+    }
+}

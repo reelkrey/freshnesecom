@@ -6,8 +6,17 @@
 @import 'mixin';
 @import 'libs';
 @import './components/header';
+@import './components/footer';
 @import './components/product-card';
 @import './components/homepage/category';
 @import './components/homepage/best-selling';
 @import './components/homepage/top-categories';
 @import './components/homepage/reviews';
+@import './components/homepage/blog';
+@import './components/blog-item';
+@import './components/blog-card';
+@import './components/breadcrumbs';
+@import './components/catalog/catalog';
+@import './components/product/product';
+@import './components/product/related';
+@import './components/blog/blog';

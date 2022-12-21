@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Freshnesecom</title>
+</head>
+<body>
+
+
+<section class="header">
+    <div class="container">
+        <nav class="header__nav">
+            <address class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="#">Chat with us</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="tel:+420336775664">+420 336 775 664</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="header__info">
+                <li class="header__info-item">
+                    <a class="header__info-link" href="#">Blog</a>
+                </li>
+                <li class="header__info-item">
+                    <a class="header__info-link" href="#">About Us</a>
+                </li>
+                <li class="header__info-item">
+                    <a class="header__info-link" href="#">Careers</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__inner">
+            <a class="logo" href="index.html">
+                <svg class="logo__image">
+                    <use xlink:href="images/sprite.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <form class="header__search" action="#">
+                <select class="header__search-select select-style">
+                    <option value="">All categories</option>
+                    <option value="">Fresh fruits</option>
+                    <option value="">Vegetables</option>
+                </select>
+                <input class="header__search-input" type="search" placeholder="Search Products, categories ...">
+                <button class="header__search-button" type="submit"></button>
+            </form>
+            <ul class="header__user">
+                <li class="header__user-item header__user-item--user">
+                    <button class="header__user-button" type="button">
+                        <span class="sr-only">Поиск</span>
+                    </button>
+                </li>
+                <li class="header__user-item header__user-item--cart">
+                    <button class="header__user-button" type="button">
+                        <span class="sr-only">Корзина</span>
+                        <span class="header__user-num">4</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__categories">
+        <div class="container">
+            <form class="header__categories-form">
+                <select class="header__categories-select select-style">
+                    <option value="">Bakery</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Pharmacy</option>
+                    <option value="">Baby</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Meat and fish</option>
+                    <option value="">Kitchen</option>
+                    <option value="">Baby</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Drinks</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Kitchen</option>
+                <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Special nutrition</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Baby</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+                <select class="header__categories-select select-style">
+                    <option value="">Pharmacy</option>
+                    <option value="">Fruit and vegetables</option>
+                    <option value="">Meat and fish</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</section>
+
+<main class="main">
+
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Homepage</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link">Fruit and vegetables</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="catalog">
+    <div class="container">
+        <div class="catalog-top">
+
+            <div class="catalog-top__inner">
+                <h2 class="catalog-top__title title">Fruit and vegetables</h2>
+                <div class="catalog-top__view">
+                    <button class="catalog-top__btn catalog-top__btn--grid catalog-top__btn--active">
+                        Grid view
+                    </button>
+                    <button class="catalog-top__btn catalog-top__btn--list">
+                        List view
+                    </button>
+                    <span class="catalog-top__numb">
+                        117
+                    </span>
+                    <span class="catalog-top__span">Products</span>
+                </div>
+            </div>
+
+            <div class="catalog-top__filters filters">
+                <ul class="filters-list">
+                    <li class="filters-item">
+                        <form class="filters-form" action="#">
+                            <label class="filters-label">
+                                <div class="filters-box">
+                                    <input class="filters-input" type="checkbox">
+                                    <span class="filters-checkbox"></span>
+                                </div>
+                                <span class="filters-text">Filtre text</span>
+                            </label>
+                            <label class="filters-label">
+                                <div class="filters-box">
+                                    <input class="filters-input" type="checkbox">
+                                    <span class="filters-checkbox"></span>
+                                </div>
+                                <span class="filters-text">Filtre text</span>
+                            </label>
+                        </form>
+                    </li>
+
+                    <li class="filters-item">
+                        <form class="filters-form" action="#">
+                            <label class="filters-label">
+                                <div class="filters-box">
+                                    <input class="filters-input filters-input--different" type="checkbox">
+                                    <span class="filters-checkbox filters-checkbox--different"></span>
+                                </div>
+                                <span class="filters-text">Filtre</span>
+                            </label>
+                            <span class="filters-span">Nbm</span>
+                        </form>
+                    </li>
+
+                    <li class="filters-item">
+                        <form class="filters-form" action="#">
+                            <label class="filters-label">
+                                <div class="filters-box">
+                                    <input class="filters-input filters-input--different" type="checkbox">
+                                    <span class="filters-checkbox filters-checkbox--different"></span>
+                                </div>
+                                <span class="filters-text">Filtre</span>
+                            </label>
+                            <span class="filters-span">Nbm</span>
+                        </form>
+                    </li>
+                
+                    <li class="filters-item">
+                        <form class="filters-form" action="#">
+                            <label class="filters-label">
+                                <div class="filters-box">
+                                    <input class="filters-input filters-input--different" type="checkbox">
+                                    <span class="filters-checkbox filters-checkbox--different"></span>
+                                </div>
+                                <span class="filters-text">Filtre</span>
+                            </label>
+                            <span class="filters-span filters-span--different">12</span>
+                            <select class="filters-select select-style">
+                                <option value="">Select</option>
+                                <option value="">Select</option>
+                                <option value="">Select</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="catalog-inner">
+            <div class="catalog__filters filter">
+                
+                <div class="filter-categories">
+                    <h3 class="title">Categories</h3>
+                    <ul class="filter-categories__list">
+                        <li class="filter-categories__item">
+                            <a class="filter-categories__link" href="#">Category name</a>
+                            <span class="filter-categories__span">320</span>
+                        </li>
+                        <li class="filter-categories__item">
+                            <a class="filter-categories__link" href="#">Category name</a>
+                            <span class="filter-categories__span">112</span>
+                        </li>
+                        <li class="filter-categories__item">
+                            <a class="filter-categories__link" href="#">Category name</a>
+                            <span class="filter-categories__span">32</span>
+                        </li>
+                        <li class="filter-categories__item">
+                            <a class="filter-categories__link" href="#">Category name</a>
+                            <span class="filter-categories__span">48</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-brands">
+                    <h3 class="title">Brands</h3>
+                    <form class="filters-form filter-brands__form" action="#">
+                        <label class="filters-label filter-brands__label">
+                            <div class="filters-box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="filters-text">Filtre by brand item</span>
+                        </label>
+                        <label class="filters-label filter-brands__label">
+                            <div class="filters-box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="filters-text">Filtre by brand item</span>
+                        </label>
+                        <label class="filters-label filter-brands__label">
+                            <div class="filters-box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="filters-text">Filtre by brand item</span>
+                        </label>
+                        <label class="filters-label filter-brands__label">
+                            <div class="filters-box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="filters-text">Filtre by brand item</span>
+                        </label>
+                        <label class="filters-label filter-brands__label">
+                            <div class="filters-box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="filters-text">Filtre by brand item</span>
+                        </label>
+                    </form>
+                </div>
+
+                <div class="filter-rating">
+                    <h3 class="title">Rating</h3>
+                    <form class="filters-form filter-rating__form" action="#">
+                        <label class="filters-label filter-rating__label">
+                            <div class="filters-box filter-rating__box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="star first--star"></span>
+                        </label>
+                        <label class="filters-label filter-rating__label">
+                            <div class="filters-box filter-rating__box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="star second--star"></span>
+                        </label>
+                        <label class="filters-label filter-rating__label">
+                            <div class="filters-box filter-rating__box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="star third--star"></span>
+                        </label>
+                        <label class="filters-label filter-rating__label">
+                            <div class="filters-box filter-rating__box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="star fourth--star"></span>
+                        </label>
+                        <label class="filters-label filter-rating__label">
+                            <div class="filters-box filter-rating__box">
+                                <input class="filters-input filters-input--different" type="checkbox">
+                                <span class="filters-checkbox filters-checkbox--different"></span>
+                            </div>
+                            <span class="star fifth--star"></span>
+                        </label>
+                    </form>
+                </div>
+
+                <div class="filter-price">
+                    <h3 class="filter-price__title title">Price</h3>
+                    <form class="filter-price__form" action="#">
+                        <input class="filter-price__input" type="text"
+                        data-min="0"
+                        data-max="1100"
+                        data-from="100"
+                        data-to="1000">
+                        <label class="filter-price__label">
+                            <span class="filter-price__span">
+                                Min
+                                <span class="filter-price__from"></span>
+                            </span>
+                            <span class="filter-price__span">
+                                Max
+                                <span class="filter-price__to"></span>
+                            </span> 
+                        </label>
+                    </form>
+                </div>
+
+                <button class="filter-btn btn" type="submit">Apply</button> 
+
+            </div>
+            
+            <div class="catalog-content product">
+                <ul class="product-catalog__items">
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/1.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/2.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/3.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/1.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/2.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/1.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/3.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/2.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="product-catalog__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/item-image/3.jpeg" width="237" height="180" alt="Product">
+                            <div class="product-card__inner">
+                                <div class="product-card__wrapper">
+                                    <h3 class="product-card__title title">Product Title</h3>
+                                    <p class="product-card__desc">Space for a small product description</p>
+                                    <span class="star second--star"></span>
+                                    <ul class="product-card__list product-info">
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Fresheness</div>
+                                            <div class="product-info__text">New (Extra fresh)</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Farm</div>
+                                            <div class="product-info__text">Grocery Tarm Fields</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Delivery</div>
+                                            <div class="product-info__text">Europe</div>
+                                        </li>
+                                        <li class="product-card__item">
+                                            <div class="product-info__title">Stock</div>
+                                            <div class="product-info__text">320 pcs</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__box">
+                                    <span class="product-card__price">23.4
+                                        <span class="product-card__currency">USD</span>
+                                        <span class="product-card__price-old">48.56</span>
+                                    </span>
+                                    <button class="product-card__button btn" type="button">Buy now</button>
+
+                                    <a class="product-card__link btn" href="product.html" >Product Deatail</a>
+
+                                    <button class="product-card__add btn" type="submit">Add to wish list</button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <div class="pagination__inner">
+                <div class="pagination-pages">
+                    <span class="pagination-pages__span">Page:</span>
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a class="pagination__link pagination__link--active" href="#">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">4</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="pagination__button btn">Show more products</button>
+
+                <span class="pagination__numb">
+                    117
+                    <span class="pagination__span">Products</span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer section">
+    <div class="container">
+        <div class="footer__inner">
+            <ul class="footer__list">
+                <h3 class="footer__subtitle title">Get in touch</h3>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">About Us</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Careers</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Press Releases</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Blog</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <h3 class="footer__subtitle title">Connections</h3>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Facebook</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Twitter</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Instagram</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Youtube</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">LinkedIn</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <h3 class="footer__subtitle title">Earnings</h3>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Become an Affiliate</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Advertise your product</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Sell on Market</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <h3 class="footer__subtitle title">Account</h3>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Your account</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Returns Centre</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">100 % purchase protection</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Chat with us</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Help</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <span class="footer__copyright-text">
+            Copyright © 2020 petrbilek.com
+        </span>
+      </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

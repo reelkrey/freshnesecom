@@ -1,0 +1,27 @@
+.blog-item {
+    max-width: 270px;
+    height: 350px;
+
+    &__image {
+        margin-bottom: 25px;
+    }
+
+    &__tag {
+        display: inline-block;
+        padding: 5px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: $green1;
+        border-radius: 10px;
+        background-color: $gray1;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    &__author,
+    &__date {
+        margin-right: 15px;
+        font-size: 12px;
+        font-style: normal;
+    }
+}

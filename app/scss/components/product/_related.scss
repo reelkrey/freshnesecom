@@ -1,0 +1,21 @@
+.related {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-card {
+        margin-right: 0;
+    }
+}

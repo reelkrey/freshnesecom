@@ -4,8 +4,8 @@
         margin-right: 30px;
     }
 
-    width: 270px;
-    height: 330px;
+    max-width: 270px;
+    
     padding: 16px;
     border: 1px solid $gray3;
     border-radius: 12px;   
@@ -13,6 +13,7 @@
     &__image {
         border-radius: 10px;
         margin-bottom: 15px;
+        object-fit: cover;
     }
 
     &__title {
@@ -36,6 +37,10 @@
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
+
+        &-old {
+            display: none;
+        }
     }
 
     &__button {
@@ -50,6 +55,97 @@
             &::after {
                 display: none;
             }
+        }
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__link {
+        display: none;
+    }
+
+    &__add {
+        display: none;
+    }
+
+    &.product-card--list {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+
+        .product-card {
+            &__image {
+                height: 280px;
+                width: 280px;
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+
+            &__inner {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            &__button {
+                display: none;
+            }
+
+            &__link {
+                display: block;
+            }
+
+            &__add {
+                display: block;
+            }
+
+            &__box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &__list {
+                display: block;
+                width: 240px;
+            }
+
+            &__item {
+                display: flex;
+                justify-content: space-between;
+    
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__link {
+                color: $white;
+                background-color: $green1;
+                border: 3px solid $green2;
+    
+                &::after {
+                    filter: invert(98%) sepia(12%) saturate(107%) hue-rotate(154deg) brightness(122%) contrast(100%);
+                }
+            }
+
+            &__price-old {
+                display: block;
+                font-size: 12px;
+                color: #A9A9A9;
+                text-decoration: line-through;
+            } 
+        }
+
+        .jq-ry-container {
+            margin-bottom: 25px;
+        }
+
+        .product-info__title,
+        .product-info__text {
+            font-size: 14px;
+            color: #A9A9A9;
         }
     }
 }

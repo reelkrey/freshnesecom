@@ -1,0 +1,48 @@
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 400px;
+    padding: 24px;
+    border-radius: 10px;
+    @extend %bg;
+
+    &__tag {
+        padding: 5px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: $green1;
+        border-radius: 10px;
+        background-color: $gray1;
+        margin-right: auto;
+    }
+
+    &__content {
+        margin-top: auto;
+
+        &-inner {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 22px;
+        color: $white;
+    }
+
+    &__image { 
+        display: inline;
+        margin-right: 15px;
+    }
+
+    &__author,
+    &__date {
+        margin-right: 15px;
+        font-size: 12px;
+        font-style: normal;
+        color: $white;
+    }
+}

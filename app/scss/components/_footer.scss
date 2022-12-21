@@ -1,0 +1,24 @@
+.footer {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__link {
+        color: $green1;
+    }
+
+    &__copyright {
+        text-align: center;
+        border-top: 1px solid 
+        RGBA(209,209,209,0.5);
+        padding-top: 50px;
+    }
+}
